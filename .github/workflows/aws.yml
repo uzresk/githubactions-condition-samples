@@ -1,11 +1,11 @@
-name: Build
+name: Build AWS
 
 on:
   push:
     branches:
       - feature/**
     paths:
-      - terraform/aws
+      - terraform/aws/**
 
 jobs:
   build:

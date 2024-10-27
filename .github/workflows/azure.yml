@@ -1,11 +1,11 @@
-name: Build
+name: Build Azure
 
 on:
   push:
     branches:
       - feature/**
     paths:
-      - terraform/azure
+      - terraform/azure/**
 
 jobs:
   build:
