@@ -3,7 +3,9 @@ name: Build
 on:
   push:
     branches:
-      - main
+      - feature/**
+    paths:
+      - terraform/aws
 
 jobs:
   build:
@@ -14,4 +16,4 @@ jobs:
 
       - name: echo
         run: |
-          echo "Build Succesful" >> $GITHUB_STEP_SUMMARY
+          echo "aws!" >> $GITHUB_STEP_SUMMARY

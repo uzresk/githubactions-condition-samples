@@ -1,0 +1,16 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - feature/**
+    paths:
+      - terraform/azure
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: |
+          echo "azure!" >> $GITHUB_STEP_SUMMARY
